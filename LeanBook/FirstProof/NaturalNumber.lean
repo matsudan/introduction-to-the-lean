@@ -31,3 +31,6 @@ set_option pp.fieldNotation.generalized false
 -- rfl: タクティクの１つ( := rfl と書いて項とすることも可能)。reflexivity 反射律
 example : MyNat.add .one .one = .two := by
   rfl
+
+example (n : MyNat) : MyNat.add n .zero = n := by
+  rfl
